@@ -1,0 +1,74 @@
+/* ===== GENERIC ===== */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #631717, #ffa500);
+    -fx-text-fill: rgb(255, 255, 255);
+}
+
+/* ===== HEADER ===== */
+.header-bar {
+    -fx-padding: 20;
+    -fx-background-color: #370b0b;
+    -fx-border-color: #030304;
+    -fx-border-width: 0 0 2 0;
+}
+
+.team-label {
+    -fx-text-fill: #ffa500;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* ===== SCOREBOARD DISPLAY ===== */
+.team-name {
+    -fx-text-fill: #370b0b;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.score-label {
+    -fx-text-fill: #050c09;
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+}
+
+.last-action {
+    -fx-text-fill: #370b0b;
+    -fx-font-size: 16px;
+}
+
+/* ===== BUTTONS ===== */
+.primary-btn {
+    -fx-background-color: #ffa500; /*setname*/
+    -fx-text-fill: rgb(8, 7, 7);
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+}
+
+.score-btn {
+    -fx-background-color: #370b0b;
+    -fx-text-fill: #fcfafa;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20;
+    -fx-font-size: 16px;
+}
+
+.secondary-btn {
+    -fx-background-color: #370b0b;
+    -fx-text-fill: rgb(239, 236, 236);
+    -fx-font-weight: bold;
+}
+
+.danger-btn {
+    -fx-background-color: #370b0b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ===== BOTTOM BAR ===== */
+.bottom-bar {
+    -fx-padding: 20;
+    -fx-background-color: #ffa500;
+    -fx-border-color: #06060b;
+    -fx-border-width: 2 0 0 0;
+}

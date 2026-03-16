@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ScoreboardController"
+            stylesheets="@styles.css">
+
+    <!-- TOP: Team Names -->
+    <top>
+        <HBox alignment="CENTER" spacing="20" styleClass="header-bar">
+            <children>
+                <VBox alignment="CENTER">
+                    <Label text="Home Team" styleClass="team-label"/>
+                    <TextField fx:id="homeNameField" promptText="Enter Home Name"/>
+                </VBox>
+
+                <VBox alignment="CENTER">
+                    <Label text="Away Team" styleClass="team-label"/>
+                    <TextField fx:id="awayNameField" promptText="Enter Away Name"/>
+                </VBox>
+
+                <Button fx:id="setNamesButton"
+                        text="Set Names"
+                        styleClass="primary-btn"/>
+            </children>
+        </HBox>
+    </top>
+
+    <!-- CENTER: Scoreboard -->
+    <center>
+        <VBox alignment="CENTER" spacing="30">
+            <children>
+                <Label fx:id="lastActionLabel" text="Last Action: None" styleClass="last-action"/>
+                <HBox alignment="CENTER" spacing="80">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <Label fx:id="homeNameDisplay" text="Home" styleClass="team-name"/>
+                            <Label fx:id="homeScoreLabel" text="0" styleClass="score-label"/>
+                        </VBox>
+
+                        <VBox alignment="CENTER">
+                            <Label fx:id="awayNameDisplay" text="Away" styleClass="team-name"/>
+                            <Label fx:id="awayScoreLabel" text="0" styleClass="score-label"/>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+
+    <!-- BOTTOM: Buttons -->
+    <bottom>
+        <VBox spacing="15" alignment="CENTER" styleClass="bottom-bar">
+            <HBox spacing="20" alignment="CENTER">
+                <children>
+                    <Label text="Select Team:"/>
+                    <RadioButton text="Home" fx:id="homeRadio"/>
+                    <RadioButton text="Away" fx:id="awayRadio"/>
+                </children>
+            </HBox>
+
+            <HBox spacing="20" alignment="CENTER">
+                <children>
+                    <Button text="+6 TD" fx:id="btn6" styleClass="score-btn"/>
+                    <Button text="+3 FG" fx:id="btn3" styleClass="score-btn"/>
+                    <Button text="+2 Safety" fx:id="btn2" styleClass="score-btn"/>
+                    <Button text="+1 XP" fx:id="btn1" styleClass="score-btn"/>
+                </children>
+            </HBox>
+
+            <HBox spacing="20" alignment="CENTER">
+                <children>
+                    <Button text="Undo" fx:id="undoBtn" styleClass="secondary-btn"/>
+                    <Button text="Clear Game" fx:id="clearBtn" styleClass="danger-btn"/>
+                </children>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
