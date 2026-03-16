@@ -2,6 +2,9 @@
 
 **Author:** Ibrahime Muhammad
 
+<img width="1071" height="685" alt="image" src="https://github.com/user-attachments/assets/8da12b4e-0282-45cf-ae78-d1b2f61f2344" />
+
+
 ## Description
 
 This is a custom JavaFX application that functions as an American football scoreboard. It is built strictly using the **Model-View-Controller (MVC)** architectural pattern to ensure a clean separation of concerns. Users can set team names, add points (Touchdowns, Field Goals, Safeties, Extra Points), track the last action, undo errant entries, and clear the game state.
